@@ -1,3 +1,3 @@
 # climate-change-chatbot
 
-link: https://climate-cbot.streamlit.app/
+link to chatbot: https://climate-cbot.streamlit.app/
