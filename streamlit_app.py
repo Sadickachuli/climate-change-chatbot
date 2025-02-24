@@ -17,7 +17,7 @@ bert_model = BertModel.from_pretrained('bert-base-uncased')
 # Load the saved Keras chatbot model
 model = load_model('./data/model/chatbotmodel.h5')
 
-# Load the intents dictionary (assumed to be stored as 'climate_change.json')
+# Load the intents dictionary 
 with open("./data/json/climate_change.json", "r") as f:
     intents_dict = json.load(f)
 
@@ -36,7 +36,7 @@ def get_bert_embedding(sentence):
     inputs = tokenizer(sentence, return_tensors='pt', padding=True, truncation=True)
     with torch.no_grad():
         outputs = bert_model(**inputs)
-    # Compute the mean of the last hidden state as the sentence embedding
+    # Computing the mean of the last hidden state as the sentence embedding
     return outputs.last_hidden_state.mean(dim=1).detach().numpy()
 
 def predict_class(sentence):
@@ -52,7 +52,7 @@ def predict_class(sentence):
     """
     embedding = get_bert_embedding(sentence)
     res = model.predict(embedding)[0]
-    ERROR_THRESHOLD = 0.35
+    ERROR_THRESHOLD = 0.35 # 0.35 works best for me
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     
