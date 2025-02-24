@@ -7,6 +7,9 @@ import json
 import random
 import pickle
 from tensorflow.keras.models import load_model
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Force TensorFlow to use CPU
+
 
 app = FastAPI()
 
@@ -70,3 +73,10 @@ def chat_response(user_input: UserInput):
     predicted_intents = predict_class(user_input.text)
     response = get_response(predicted_intents)
     return {"response": response}
+
+# Get port from Render's environment variable (default to 8000)
+PORT = int(os.environ.get("PORT", 8000))
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=PORT)

@@ -1,9 +1,8 @@
+tensorflow-cpu
 fastapi
 uvicorn
-torch
 transformers
-tensorflow
-pydantic
-pickle-mixin
+torch
 numpy
-json5
+pydantic
+pickle5
