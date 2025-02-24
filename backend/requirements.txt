@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+transformers
+tensorflow
+pydantic
+pickle-mixin
+numpy
+json5
