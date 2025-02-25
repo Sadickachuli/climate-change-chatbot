@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import API_URL from "../config";
-import "../styles.css"; // Import CSS for styling
+import "../styles.css";
 
 const Chat = () => {
   const [userInput, setUserInput] = useState("");
   const [messages, setMessages] = useState<{ text: string; sender: string }[]>([]);
   const [loading, setLoading] = useState(false);
+  const chatBoxRef = useRef<HTMLDivElement>(null);
 
   const sendMessage = async () => {
     if (!userInput.trim()) return;
@@ -18,7 +19,7 @@ const Chat = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/chat`, { text: userInput }); // ✅ FIXED HERE
+      const response = await axios.post(`${API_URL}/chat`, { text: userInput });
 
       // Add bot response to chat
       setMessages([...newMessages, { text: response.data.response, sender: "Bot" }]);
@@ -30,16 +31,40 @@ const Chat = () => {
     setLoading(false);
   };
 
+  useEffect(() => {
+    if (chatBoxRef.current) {
+      chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
+    }
+  }, [messages, loading]);
+
   return (
     <div className="chat-container">
-      <div className="chat-box">
+      <div className="chat-header">Climate Change Chatbot</div>
+
+      <div className="chat-box" ref={chatBoxRef}>
         {messages.map((msg, index) => (
-          <div key={index} className={msg.sender === "You" ? "user-message" : "bot-message"}>
-            <strong>{msg.sender}:</strong> {msg.text}
-          </div>
+          msg.sender === "You" ? (
+            <div key={index} className="user-message">{msg.text}</div>
+          ) : (
+            <div key={index} className="bot-message-container">
+              <img src="/cbotlog.png" alt="Bot" className="bot-avatar" />
+              <div className="bot-message">{msg.text}</div>
+            </div>
+          )
         ))}
-        {loading && <div className="loading">Thinking...</div>}
+
+        {loading && (
+          <div className="typing-indicator">
+            <img src="/bot-avatar.png" alt="Bot" className="bot-avatar" />
+            <div className="typing-dots">
+              <span className="dot"></span>
+              <span className="dot"></span>
+              <span className="dot"></span>
+            </div>
+          </div>
+        )}
       </div>
+
       <div className="input-area">
         <input
           type="text"

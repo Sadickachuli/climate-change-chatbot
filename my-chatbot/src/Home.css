@@ -1,0 +1,84 @@
+.home {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .nav-links a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  .nav-links .badge {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  .hero {
+    background-image: url("../assets/hero-bg.jpg"); /* Add a suitable background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .hero ul li {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .chat-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .chat-btn:hover {
+    background-color: #0056b3;
+  }
+  

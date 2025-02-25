@@ -1,69 +1,197 @@
-body {
+/* chat layout */
+body, html {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    text-align: center;
+    background-color: #f0f0f5;
     margin: 0;
     padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
+  /* chat container */
   .chat-container {
-    width: 80%;
-    max-width: 500px;
-    margin: 20px auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
   
+  /* Chat Header */
+  .chat-header {
+    background: #0078d4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Chat Messages */
   .chat-box {
-    height: 300px;
+    flex-grow: 1;
     overflow-y: auto;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
   }
   
+  /* User Message*/
   .user-message {
-    text-align: right;
-    color: blue;
-    margin: 5px;
+    align-self: flex-end;
+    background: #0078d4;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 15px 15px 0 15px;
+    max-width: 80%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  /* Bot Message */
+  .bot-message-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: flex-start;
+    max-width: 80%;
+  }
+  
+  .bot-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0078d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
   }
   
   .bot-message {
-    text-align: left;
-    color: green;
-    margin: 5px;
+    background: #e0e0e0;
+    color: black;
+    padding: 12px 18px;
+    border-radius: 15px 15px 15px 0;
+    font-size: 16px;
+    max-width: 80%;
   }
   
+  /* Typing Indicator Bubble */
+  .typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 15px 15px 15px 0;
+    max-width: 80%;
+  }
+  
+  .typing-indicator .dot {
+    width: 8px;
+    height: 8px;
+    background: gray;
+    border-radius: 50%;
+    animation: typing 1.5s infinite ease-in-out;
+  }
+  
+  .typing-indicator .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .typing-indicator .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes typing {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  /* Input Area */
   .input-area {
     display: flex;
-    margin-top: 10px;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #ddd;
   }
   
   input {
     flex-grow: 1;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 18px;
+    outline: none;
   }
   
   button {
-    padding: 10px;
-    background: blue;
+    margin-left: 10px;
+    padding: 15px 22px;
+    background: #0078d4;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-size: 18px;
     cursor: pointer;
+    transition: background 0.3s ease;
   }
   
   button:hover {
-    background: darkblue;
+    background: #0056a3;
+  }
+  /* Bot Avatar */
+.bot-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
   }
   
-  .loading {
-    color: gray;
-    font-style: italic;
+  /* Typing Indicator */
+  .typing-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 15px 15px 15px 0;
+    max-width: 80%;
+  }
+  
+  .typing-dots {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .typing-dots .dot {
+    width: 8px;
+    height: 8px;
+    background: gray;
+    border-radius: 50%;
+    animation: typing 1.5s infinite ease-in-out;
+  }
+  
+  .typing-dots .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .typing-dots .dot:nth-child(3) {
+    animation-delay: 0.4s;
   }
   
