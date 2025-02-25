@@ -119,7 +119,7 @@ The deployed streamlit chatbot is located at: https://climate-cbot.streamlit.app
 🛠️ Future Improvements
 - Deploy React frontend using vercel.
   
-- Deloy React backend with Render
+- Deloy React backend with Heroku.
   
 - Expand the dataset for better chatbot accuracy.
   
