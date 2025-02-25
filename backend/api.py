@@ -60,7 +60,7 @@ def predict_class(sentence):
     """Predict intent of an input sentence."""
     embedding = get_bert_embedding(sentence)
     res = model.predict(embedding)[0]
-    ERROR_THRESHOLD = 0.35
+    ERROR_THRESHOLD = 0.30
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return [{'intent': classes[r[0]], 'probability': str(r[1])} for r in results] if results else []
