@@ -7,11 +7,11 @@
 An AI-powered chatbot that provides reliable and informative responses to climate change-related queries. Built using a fine-tuned Transformer model, this chatbot leverages NLP techniques to deliver accurate answers, helping users understand climate science, effects, solutions, and policies.  
 
 ##  Features  
--- **Natural Language Understanding** – Uses a fine-tuned Transformer model to generate responses.  
--- **Pre-trained NLP Model** – Built using Hugging Face’s Transformer models and TensorFlow.  
--- **Interactive Chat Interface** – Streamlit-based frontend for seamless user interaction.  
--- **React.js Web App (Coming Soon)** – A modern, visually appealing UI for the chatbot.  
--- **API Integration** – Uses FastAPI for backend processing.  
+- **Natural Language Understanding** – Uses a fine-tuned Transformer model to generate responses.  
+- **Pre-trained NLP Model** – Built using Hugging Face’s Transformer models and TensorFlow.  
+- **Interactive Chat Interface** – Streamlit-based frontend for seamless user interaction.  
+- **React.js Web App (Coming Soon)** – A modern, visually appealing UI for the chatbot.  
+- **API Integration** – Uses FastAPI for backend processing.  
 
 ---
 
