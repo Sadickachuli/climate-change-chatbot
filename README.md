@@ -1,8 +1,8 @@
-# climate-change-chatbot
+#  **Climate Change Chatbot** 
 
 ![cbot (2)](https://github.com/user-attachments/assets/d9dec30b-2752-4c60-9cf9-3d5ed2c0a6e5)
 
-#  **Climate Change Chatbot **
+
 
 An AI-powered chatbot that provides reliable and informative responses to climate change-related queries. Built using a fine-tuned Transformer model, this chatbot leverages NLP techniques to deliver accurate answers, helping users understand climate science, effects, solutions, and policies.  
 
