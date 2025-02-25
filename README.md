@@ -2,11 +2,11 @@
 
 ![cbot (2)](https://github.com/user-attachments/assets/d9dec30b-2752-4c60-9cf9-3d5ed2c0a6e5)
 
-# 🌍 Climate Change Chatbot  
+#  Climate Change Chatbot  
 
 An AI-powered chatbot that provides reliable and informative responses to climate change-related queries. Built using a fine-tuned Transformer model, this chatbot leverages NLP techniques to deliver accurate answers, helping users understand climate science, effects, solutions, and policies.  
 
-## 🚀 Features  
+##  Features  
 -- **Natural Language Understanding** – Uses a fine-tuned Transformer model to generate responses.  
 -- **Pre-trained NLP Model** – Built using Hugging Face’s Transformer models and TensorFlow.  
 -- **Interactive Chat Interface** – Streamlit-based frontend for seamless user interaction.  
@@ -19,11 +19,17 @@ An AI-powered chatbot that provides reliable and informative responses to climat
 
 Climate-Change-Chatbot/ 
 │── backend/ # FastAPI backend for chatbot API 
+
 │── data/ # Dataset for chatbot training including the saved model 
+
 │── my-chatbot/ # React.js user interface (Not Deployed) 
+
 │── notebook/ # final colab notebook with model training scripts
+
 │── streamlit-app/ # Deployed Streamlit UI for testing chatbot 
+
 │── requirements.txt # Python dependencies 
+
 │── README.md # Project documentation
 
 
