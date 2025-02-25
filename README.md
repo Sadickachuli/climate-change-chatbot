@@ -118,14 +118,14 @@ The deployed streamlit chatbot is located at: https://climate-cbot.streamlit.app
 
 ### **Hyperparameter Tuning**
 
-| Experiment   | Learning Rate | Batch Size | Epochs | Accuracy | Precision | Recall | F1 Score |
-|-------------|--------------|------------|--------|----------|-----------|--------|----------|
-| Experiment 1 | 1e-4         | 4          | 10     | 0.75     | 0.78      | 0.65   | 0.71     |
-| Experiment 2 | 2e-4         | 8          | 15     | 0.82     | 0.85      | 0.76   | 0.80     |
-| Experiment 3 | 5e-5         | 2          | 20      | 0.68     | 0.70      | 0.58   | 0.63     |
-| Experiment 4 | 1e-4         | 8          | 25      | 0.79     | 0.82      | 0.72   | 0.77     |
-| Experiment 5 | 5e-5         | 4          | 35      | 0.73     | 0.76      | 0.61   | 0.68     |
-| Experiment 7 | 1e-4         | 12         | 50     | 0.87     | 0.99      | 0.81   | 0.89     |
+| Experiment   | Learning Rate | Batch Size | Epochs | Accuracy | Precision | Recall | 
+|-------------|--------------|------------|--------|----------|-----------|--------|
+| Experiment 1 | 1e-4         | 4          | 10     | 0.75     | 0.78      | 0.65   |
+| Experiment 2 | 2e-4         | 8          | 15     | 0.82     | 0.85      | 0.76   | 
+| Experiment 3 | 5e-5         | 2          | 20      | 0.68     | 0.70      | 0.58   | 
+| Experiment 4 | 1e-4         | 8          | 25      | 0.79     | 0.82      | 0.72   |
+| Experiment 5 | 5e-5         | 4          | 35      | 0.73     | 0.76      | 0.61   |
+| Experiment 7 | 1e-4         | 12         | 50     | 0.87     | 0.91     | 0.68   | 
 
 
 ### **Performance Metrics**  
