@@ -38,9 +38,16 @@ The dataset is stored in JSON format, which allows efficient processing for trai
 
 - Enables intent classification for better user interaction.
 
--Supports easy expansion for improved chatbot performance over time.
+- Supports easy expansion for improved chatbot performance over time.
 
 This dataset serves as the foundation for training the chatbot, ensuring that it can provide informative and contextually relevant responses to users’ climate-related queries.
+
+| Questions                         | Answers                                                                                  | Patterns                                   | Tags               |
+|------------------------------------|-----------------------------------------------------------------------------------------|--------------------------------------------|--------------------|
+| What is climate change?           | Climate change refers to long-term alterations in temperature, precipitation, and other atmospheric conditions on Earth. | Can you define climate change?            | Climate Science   |
+| What are greenhouse gases?        | Greenhouse gases are gases that trap heat in the atmosphere, including carbon dioxide, methane, and water vapor.        | Can you explain what greenhouse gases are? | Greenhouse Gases  |
+| What is the Paris Agreement?      | The Paris Agreement is an international treaty aimed at limiting global temperature rise to well below 2°C.             | Can you explain the Paris Agreement?      | Climate Policy    |
+
 
 ## 📂 Project Structure  
 
