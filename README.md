@@ -42,6 +42,8 @@ The dataset is stored in JSON format, which allows efficient processing for trai
 
 This dataset serves as the foundation for training the chatbot, ensuring that it can provide informative and contextually relevant responses to users’ climate-related queries.
 
+## **Sample Entries**
+
 | Questions                         | Answers                                                                                  | Patterns                                   | Tags               |
 |------------------------------------|-----------------------------------------------------------------------------------------|--------------------------------------------|--------------------|
 | What is climate change?           | Climate change refers to long-term alterations in temperature, precipitation, and other atmospheric conditions on Earth. | Can you define climate change?            | Climate Science   |
