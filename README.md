@@ -2,11 +2,11 @@
 
 ![cbot (2)](https://github.com/user-attachments/assets/d9dec30b-2752-4c60-9cf9-3d5ed2c0a6e5)
 
-#  Climate Change Chatbot  
+#  **Climate Change Chatbot **
 
 An AI-powered chatbot that provides reliable and informative responses to climate change-related queries. Built using a fine-tuned Transformer model, this chatbot leverages NLP techniques to deliver accurate answers, helping users understand climate science, effects, solutions, and policies.  
 
-##  Features  
+##  **Features**  
 - **Natural Language Understanding** – Uses a fine-tuned Transformer model to generate responses.  
 - **Pre-trained NLP Model** – Built using Hugging Face’s Transformer models and TensorFlow.  
 - **Interactive Chat Interface** – Streamlit-based frontend for seamless user interaction.  
@@ -14,6 +14,33 @@ An AI-powered chatbot that provides reliable and informative responses to climat
 - **API Integration** – Uses FastAPI for backend processing.  
 
 ---
+## **Dataset**
+The dataset used for training the climate change chatbot consists of structured question-answer pairs covering various aspects of climate science, causes, effects, mitigation strategies, and policies. It is designed to improve chatbot interactions by mapping user queries to relevant responses using predefined tags.
+
+### **Structure of the Dataset**
+The dataset is organized into four main fields:
+
+1. Questions: Commonly asked user queries related to climate change.
+
+2. Answers: Corresponding responses providing accurate and concise information.
+
+3. Patterns: Alternative phrasings of the questions to enhance the chatbot’s ability to recognize diverse user inputs.
+
+4. Tags: Categorization labels that group similar topics, enabling efficient intent recognition.
+
+## **Data Format**
+The dataset is stored in JSON format, which allows efficient processing for training a Transformer-based chatbot.
+
+## **Why This Dataset?**
+- Covers key climate change topics including causes, effects, solutions, policies, and scientific concepts.
+
+- Provides diverse question variations to enhance chatbot accuracy.
+
+- Enables intent classification for better user interaction.
+
+-Supports easy expansion for improved chatbot performance over time.
+
+This dataset serves as the foundation for training the chatbot, ensuring that it can provide informative and contextually relevant responses to users’ climate-related queries.
 
 ## 📂 Project Structure  
 
