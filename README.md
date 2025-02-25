@@ -45,7 +45,7 @@ This dataset serves as the foundation for training the chatbot, ensuring that it
 | Questions                         | Answers                                                                                  | Patterns                                   | Tags               |
 |------------------------------------|-----------------------------------------------------------------------------------------|--------------------------------------------|--------------------|
 | What is climate change?           | Climate change refers to long-term alterations in temperature, precipitation, and other atmospheric conditions on Earth. | Can you define climate change?            | Climate Science   |
-| What are greenhouse gases?        | Greenhouse gases are gases that trap heat in the atmosphere, including carbon dioxide, methane, and water vapor.        | Can you explain what greenhouse gases are? | Greenhouse Gases  |
+| How does carbon dioxide contribute to global warming?       | Carbon dioxide traps heat in the Earth's atmosphere, leading to increased global temperatures.        | What is the role of CO2 in climate change? | CO2 Impact  |
 | What is the Paris Agreement?      | The Paris Agreement is an international treaty aimed at limiting global temperature rise to well below 2°C.             | Can you explain the Paris Agreement?      | Climate Policy    |
 
 
