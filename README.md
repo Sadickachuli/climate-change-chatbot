@@ -116,6 +116,23 @@ The frontend should now be running on http://localhost:5173 🚀
 ## Running the Streamlit
 The deployed streamlit chatbot is located at: https://climate-cbot.streamlit.app/
 
+### **Performance Metrics**  
+The chatbot was trained using a pre-trained Transformer model fine-tuned on a domain-specific dataset. Below are the key performance metrics from the training process:
+
+| Epoch | Precision | Recall  | Accuracy | Loss  |
+|-------|-----------|---------|----------|-------|
+| 46    | 0.9779    | 0.7311  | 0.8973   | 0.5218 |
+| 47    | 0.9895    | 0.6833  | 0.9012   | 0.5806 |
+| 48    | 0.9876    | 0.8085  | 0.9489   | 0.3789 |
+| 49    | 0.9872    | 0.7248  | 0.9204   | 0.4366 |
+| 50    | 0.9052    | 0.6851  | 0.8744   | 0.5319 |
+
+### **Observations**
+- The model achieved its **highest accuracy (94.89%)** at **epoch 48**, with a **precision of 98.76%** and **recall of 80.85%**.
+- Loss generally decreased over the epochs, reaching a low of **0.3789** at epoch 48.
+- Some fluctuations in recall suggest potential improvements through hyperparameter tuning or dataset augmentation.
+
+
 🛠️ Future Improvements
 - Deploy React frontend using vercel.
   
