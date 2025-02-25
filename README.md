@@ -81,10 +81,13 @@ The frontend should now be running on http://localhost:5173 🚀
 The deployed streamlit chatbot is located at: https://climate-cbot.streamlit.app/
 
 🛠️ Future Improvements
-🔹 Deploy React frontend using vercel.
-🔹 Deloy React backend with Render
-🔹 Expand the dataset for better chatbot accuracy.
-🔹 Improve model performance with hyperparameter tuning.
+- Deploy React frontend using vercel.
+  
+- Deloy React backend with Render
+  
+- Expand the dataset for better chatbot accuracy.
+  
+- Improve model performance with hyperparameter tuning.
 
 📜 License
 This project is licensed under the MIT License.
