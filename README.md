@@ -117,7 +117,7 @@ The frontend should now be running on http://localhost:5173 🚀
 The deployed streamlit chatbot is located at: https://climate-cbot.streamlit.app/
 
 ### **Performance Metrics**  
-The chatbot was trained using a pre-trained Transformer model fine-tuned on a domain-specific dataset. Below are the key performance metrics from the training process:
+The chatbot was trained using a pre-trained Transformer model fine-tuned on the domain-specific dataset above. Below are the key performance metrics from the training process:
 
 | Epoch | Precision | Recall  | Accuracy | Loss  |
 |-------|-----------|---------|----------|-------|
