@@ -15,7 +15,7 @@ bert_model = BertModel.from_pretrained('bert-base-uncased')
 # Load the saved Keras chatbot model
 model = load_model('./data/model/chatbotmodel.h5')
 
-# Load the intents dictionary
+# Load the intents dictionary 
 with open("./data/json/climate_change.json", "r") as f:
     intents_dict = json.load(f)
 
@@ -23,7 +23,7 @@ with open("./data/json/climate_change.json", "r") as f:
 with open('./data/model/classes.pkl', 'rb') as f:
     classes = pickle.load(f)
 
-# hardcoding greeting responses
+# Hardcoded greeting responses
 greeting_responses = [
     "Hello! 👋 I'm your Climate Change Chatbot. Ask me anything about climate change, and I'll be happy to help!",
     "Hey there! 🌍 I'm here to answer your questions about climate change. Just type your question, and I'll do my best!",
@@ -42,6 +42,7 @@ def get_bert_embedding(sentence):
     inputs = tokenizer(sentence, return_tensors='pt', padding=True, truncation=True)
     with torch.no_grad():
         outputs = bert_model(**inputs)
+    # Compute the mean of the last hidden state as the sentence embedding
     return outputs.last_hidden_state.mean(dim=1).detach().numpy()
 
 def predict_class(sentence):
@@ -89,10 +90,10 @@ if user_input:
     if any(word in user_text for word in greeting_keywords):
         response = random.choice(greeting_responses)
     else:
-        # Getting predictions from the model I built
+        # Get predictions from the model
         predicted_intents = predict_class(user_text)
-        # Getting the chatbot's response based on predicted intent
+        # Get the chatbot's response based on predicted intent
         response = get_response(predicted_intents, intents_dict)
 
-    # the bot's response
+    # Display the bot's response
     st.write("Bot:", response)
