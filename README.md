@@ -133,7 +133,7 @@ The chatbot was trained using a pre-trained Transformer model fine-tuned on a do
 - Some fluctuations in recall suggest potential improvements through hyperparameter tuning or dataset augmentation.
 
 
-🛠️ ### **Future Improvements**
+ ###  🛠️**Future Improvements**
 - Deploy React frontend using vercel.
   
 - Deloy React backend with Heroku.
