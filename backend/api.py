@@ -42,8 +42,8 @@ class UserInput(BaseModel):
 # Hardcoded greeting responses
 greeting_responses = [
     "Hello! 👋 I'm your Climate Change Chatbot. Ask me anything about climate change, and I'll be happy to help!",
-    "Hey there! 🌍 I'm here to answer your questions about climate change. Ask me anything about climate change, and I'll do my best!",
-    "Hi! 👋 Need info on climate change? Ask me anything about climate change, and I'll provide insights!",
+    "Hey there! 🌍 I'm here to answer your questions about climate change. Just type your question, and I'll do my best!",
+    "Hi! 👋 Need info on climate change? Just ask, and I'll provide insights!",
 ]
 
 # Common greetings to check for
@@ -60,7 +60,7 @@ def predict_class(sentence):
     """Predict intent of an input sentence."""
     embedding = get_bert_embedding(sentence)
     res = model.predict(embedding)[0]
-    ERROR_THRESHOLD = 0.30
+    ERROR_THRESHOLD = 0.35
     results = [[i, r] for i, r in enumerate(res) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return [{'intent': classes[r[0]], 'probability': str(r[1])} for r in results] if results else []
