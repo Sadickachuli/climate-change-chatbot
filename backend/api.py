@@ -42,7 +42,7 @@ class UserInput(BaseModel):
 # Hardcoded greeting responses
 greeting_responses = [
     "Hello! 👋 I'm your Climate Change Chatbot. Ask me anything about climate change, and I'll be happy to help!",
-    "Hey there! 🌍 I'm here to answer your questions about climate change. Just type your question, and I'll do my best!",
+    "Hey there! 🌍 I'm here to answer your questions about climate change.  Ask me anything about climate change,, and I'll do my best!",
     "Hi! 👋 Need info on climate change? Just ask, and I'll provide insights!",
 ]
 
